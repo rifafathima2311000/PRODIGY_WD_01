@@ -1,208 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plantry Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="#" class="nav-logo">
-            <h1>
-                🌿The Plant Pantry 
-                <img src="sym.png" alt="RF Logo" class="rf-logo">
-              </h1>
-              
-        </a>
-        <ul class="nav-menu">
-          <button id="menu-close-button" class="fas fa-times"></button>
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#the-green-story" class="nav-link">The Green Story</a></li>
-          <li class="nav-item"><a href="#explore-plants" class="nav-link">Explore Plants</a></li>
-          <li class="nav-item"><a href="#nature-snaps" class="nav-link">Nature Snaps</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button id="menu-open-button" class="fas fa-bars"></button>
-      </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plant Pantry</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="sym.png" alt=""></a>
+            <h1 class="logoName">The Plant Pantry</h1>
+        </div>
+        <div class="plant-image-wrapper">
+           
+          </div>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#blogs">blogs</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
     </header>
-    <main>
-      <!-- Hero section -->
-      <section class="hero-section">
-        <div class="section-content">
-          <div class="hero-details">
-            <h2 class="title">Let’s Grow Together!</h2>
-            <h3 class="subtitle">Reconnect with the earth, one plant at a time</h3>
-            <p class="description">From tiny succulents to lush greens, we have the perfect plant for every mood and corner!</p>
-            <div class="buttons">
-                <a href="#" class="button add-to-garden">Add to Garden</a>
-              <a href="#contact" class="button contact-us">Contact Us</a>
+  
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Let’s Grow Together!</h2>
+            <p>
+                From tiny succulents to lush greens, we have the perfect plant for every mood and corner!</p>
+            <div class="home-btn">
+                <a href="#"><button>see more</button></a>
             </div>
-          </div>
-          <div class="hero-image-wrapper">
-            <img src="welcome plants.png" alt="Welcome plants image" class="hero-image" />
-          </div>
         </div>
-      </section>
-
-      <!-- About section -->
-<section class="section the-green-story-section" id="the-green-story" data-bg="#eafaf1">
-    <div class="section-content">
-      <div class="the-green-story-image-wrapper">
-        <img src="PLANTS SHELF.png" alt="Wooden shelf with houseplants for The Green Story section" />
-      </div>
-      <div class="the-green-story-details">
-        <h2 class="section-title">The RF Green Story</h2>
-        <p class="text">
-          The Plant Pantry is your one-stop shop for all things green and growing. We offer a wide variety of indoor and outdoor plants, handpicked to suit every space and style. From low-maintenance succulents to air-purifying leafy companions, our collection is perfect for beginners and seasoned plant lovers alike. At The Plant Pantry, we believe plants bring peace, beauty, and a touch of nature into our everyday lives. Whether you’re decorating your home, greening up your workspace, or gifting someone special, we’re here to help you choose the perfect plant. Let’s grow a greener, fresher world—one plant at a time.
-        </p>
-        <div class="social-link-list">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-          
- 
-  <!--explore plant section-->
-  <section class="plant-section" id="explore-plants">
-    <h2 class="section-title">Explore Our RF Plants</h2>
-    <div class="section-content">
-      <ul class="plant-list">
-        <li class="plant-item">
-          <img src="jade plant.png" alt="Succulents" class="plant-image" />
-          <div class="plant-details">
-            <h3 class="name">Succulents</h3>
-            <p class="text">Low-maintenance beauties that thrive in sunlight and store water. Succulents are ideal for busy lifestyles as they require minimal watering and care. Their unique shapes and vibrant colors make them perfect for home décor, desk spaces, or gifts. They flourish in bright light and bring a calming, natural vibe indoors.</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <img src="Indoor plants.png" alt="Indoor Plants" class="plant-image" />
-          <div class="plant-details">
-            <h3 class="name">Indoor Plants</h3>
-            <p class="text">Perfect for your room or workspace — bringing in freshness and calm. Indoor plants purify the air, reduce stress, and uplift the mood. Their greenery enhances interior aesthetics and promotes well-being. Whether placed on a windowsill or a corner shelf, they create a soothing environment and connect you to nature.</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <img src="Air purifying plants.png" alt="Air Purifying" class="plant-image" />
-          <div class="plant-details">
-            <h3 class="name">Air-Purifying Plants</h3>
-            <p class="text">Air-purifying plants help remove toxins and refresh your surroundings, making them ideal for improving indoor air quality and adding a touch of greenery.</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <img src="Flowering plants .png" alt="Flowering Plants" class="plant-image" />
-          <div class="plant-details">
-            <h3 class="name">Flowering Plants</h3>
-            <p class="text">Brighten any space with blooms that add color and charm. Flowering plants bring joy, vibrancy, and a refreshing natural touch to your home. They come in various colors and fragrances, uplifting moods and enhancing décor. Perfect for windowsills, balconies, or centerpieces — these beauties make everyday spaces feel special and alive.</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <img src="Hanging Plants.png" alt="Hanging Plants" class="plant-image" />
-          <div class="plant-details">
-            <h3 class="name">Hanging Plants</h3>
-            <p class="text">Great for balconies and corners, stylish and space-saving. Hanging plants add elegance without taking up floor space. They drape beautifully from pots or planters, making vertical gardening easy. Ideal for compact homes or decorative accents, these plants bring greenery to eye level and create a lush, floating garden effect indoors or out</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <img src="Bonsai Plants.png" alt="Bonsai" class="plant-image" />
-          <div class="plant-details">
-            <h3 class="name">Bonsai</h3>
-            <p class="text">Miniature trees that reflect patience, artistry, and care. Bonsai plants are living sculptures shaped with precision over time. They represent harmony, balance, and mindfulness. Perfect for meditative spaces or artistic displays, bonsai trees connect nature with creativity, turning any small area into a peaceful, inspiring expression of natural beauty</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
- 
-
-      <!-- Gallery section -->
-     <section class="section gallery-section" id="nature-snaps" data-bg="#fffbe6">
-        <h2 class="section-title">Gallery</h2>
-        <div class="section-content">
-          <ul class="gallery-list">
-            <li class="gallery-item">
-              <img src="plant1.png" alt="Succulent collection" class="gallery-image" />
-            </li>
-            <li class="gallery-item">
-              <img src="plant2.png" alt="Bonsai in pot" class="gallery-image" />
-            </li>
-            <li class="gallery-item">
-              <img src="plant3.png" alt="Mixed succulents top view" class="gallery-image" />
-            </li>
-            <li class="gallery-item">
-              <img src="plant4.png" alt="Hanging pots" class="gallery-image" />
-            </li>
-            <li class="gallery-item">
-              <img src="plant5.png" alt="Corner plants" class="gallery-image" />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Contact section -->
-      <section class="contact-section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-content">
-          <ul class="contact-info-list">
-            <li class="contact-info">
-              <i class="fa-solid fa-location-crosshairs"></i>
-              <p>123 hill Avenue,98765</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-envelope"></i>
-              <p>info@theRFplantpantry.com</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-phone"></i>
-              <p>456 456-78909</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Monday - Saturday: 7:00 AM - 8:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Sunday: Closed</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-globe"></i>
-              <p>www.theRFplantpantry.com</p>
-            </li>
-          </ul>
-          <form action="#" class="contact-form">
-            <input type="text" placeholder="Your name" class="form-input" required />
-            <input type="email" placeholder="Your email" class="form-input" required />
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button type="submit" class="button submit-button">Submit</button>
-          </form>
-        </div>
-      </section>
-      <!-- Footer section -->
-      <footer class="footer-section">
-        <div class="section-content">
-          <p class="copyright-text">© 2025 The RF Plant Pantry</p>
-          <div class="social-link-list">
-            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
-          <p class="policy-text">
-            <a href="#" class="policy-link">Privacy policy</a>
-            <span class="separator">•</span>
-            <a href="#" class="policy-link">Refund policy</a>
-          </p>
-        </div>
-      </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="page.js"></script>
-</body>
-</html>
-
       
+            <img src="img1.png" alt="Decorative Plant" class="custom-shape" />
+          </div>
+    </section>
+    
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Botanical Picks</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Creeper.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Creeper</h3>
+                        <p>A natural draper of beauty, Creepers love to climb and cascade, bringing life to every wall, balcony, or railing they touch. Let your space bloom with their graceful trails and lush green whispers.</p>
+                     
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Daisy Plant.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Daisy Plant</h3>
+                        <p>With cheerful blooms that radiate sunshine, the Daisy Plant adds a touch of innocence and joy to any garden. A timeless flower that symbolizes purity and positivity — perfect for every green corner!
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Bonsai.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bonsai</h3>
+                        <p>A miniature masterpiece of patience and harmony, the Bonsai brings the essence of ancient nature into your home. Each tiny tree tells a story of balance, calm, and timeless beauty.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="jade plant.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>jade plant</h3>
+                        <p>Known as the “Money Tree,” the Jade Plant is a symbol of good luck and growth. With its plump emerald leaves and easy care, it brings fortune and freshness to every little nook.</p>
+                        <div class="orderNow">
+                          <button>Order Now</button>
+                        </div>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Cloudberry Bloom.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cloudberry Bloom</h3>
+                        <p>Rare and radiant, the Cloudberry Bloom carries the soft golden hues of a twilight meadow. Delicate yet resilient, it whispers sweet tales of northern wildlands to your garden.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Flowering plants .png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Flowering plants</h3>
+                        <p>A delightful bouquet of colors and scents, our flowering plants turn ordinary corners into blooming wonderlands. Perfect for spreading joy, charm, and natural beauty all around you.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Herb.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Herb Plant</h3>
+                        <p>Fragrant and functional, herb plants bring the magic of nature’s apothecary right to your windowsill. From minty freshness to basilic bliss, these green companions are kitchen-ready charmers.
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Hanging Plants.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Hanging Plants</h3>
+                        <p>Gracefully cascading from baskets and shelves, hanging plants bring a touch of floating greenery into your space. Like nature's chandeliers, they add elegance and freshness from above.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <h2>Sprout Stories</h2>
+        </div>
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="Air purifying plants.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Breathe Easy with Air-Purifying Plants 🌿 </h3>
+                        <p>Bring home nature's own air filters! These green companions don't just beautify your space—they cleanse the air by absorbing toxins and releasing fresh oxygen. Perfect for bedrooms, workspaces, and cozy corners.</p>
+                        <p>Discover our top picks like the Peace Lily, Snake Plant, and Spider Plant that silently work to create a healthier indoor environment while adding serene beauty.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="Marmalade Plant.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Marmalade Plant: A Burst of Sunset in Your Garden 🌇🧡</h3>
+                        <p>With its vivid orange blossoms and citrusy charm, the Marmalade Plant adds a warm, golden glow to any space. It thrives in sunny spots and loves a little morning cheer.</p>
+                        <p>Perfect for balconies and garden edges, this plant invites butterflies and positive vibes. Easy to care for and dazzling to look at, it's your go-to choice for natural brightness.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="Indoor plants.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Indoor Plants: Green Companions for Every Corner 🪴🌿 </h3>
+                        <p>Indoor plants do more than beautify your space—they purify the air, reduce stress, and bring a refreshing calm to your daily life. From leafy ferns to stylish succulents, there’s a plant for every room.</p>
+                        <p>They thrive in cozy environments with indirect sunlight and need just a little care to stay happy. Whether you're a beginner or a plant parent pro, these greens are the perfect companions for peaceful living.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="Sunflower Plant.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Sunflower Plant: A Ray of Sunshine in Your Garden 🌻 </h3>
+                        <p>Known for their bright yellow petals and tall, proud stems, sunflowers symbolize positivity, warmth, and happiness. They're a cheerful addition to any outdoor garden and can even thrive in large containers on sunny balconies.</p>
+                        <p>These sun-loving plants follow the light and are surprisingly easy to grow. With a bit of sunshine, water, and love, sunflowers bring golden joy to every corner of your home or garden.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <form action="">
+            <h3>subscribe for latest update</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="button" value="subscribe" class="box2">
+        </form>
+    </section>
+    
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>Bloom Reviews</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Absolutely in love with this plant! It arrived fresh and healthy, with vibrant leaves and well-packed soil. It’s been just a week, and I can already see new growth. The care guide was super helpful—perfect for a beginner like me. Totally brightened up my space!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="a.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Avid</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The Jade plant I received is just perfect! Its chubby little leaves are so cute and glossy. I placed it by my window, and it instantly made the corner feel warm and alive. Plus, it’s super low-maintenance!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="c.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>caya</h3>
+                            <p>Interior Decorator </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Wow! The Sunflower plant brought so much cheer into my room. It was well-packed, fresh, and even had a tiny bud ready to bloom. It adds a sunny vibe and always makes me smile when I walk in.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="s.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>simya</h3>
+                            <p>Corporate Professional </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The Bonsai is a true beauty! It looks like a miniature tree full of wisdom and charm. You can tell it’s been nurtured with care. It gives my desk a calm, zen feel—totally worth it</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="j.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Jeni</h3>
+                            <p>Home Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+
+                    <h1 class="logoName"> The Plant Pantry </h1>
+                </div>
+
+                <p>🌿 Nurtured with love by The Plant Pantry — where every leaf tells a story.</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+            <div class="box">
+                <h3>Extra link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+444-2322-4441</a>
+                <a href="#"> <i class="fas fa-envelope"></i>theplantpantry@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            created by <span>rfplantpantry</span> |all rights reserved ! 
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script src="page.js"></script>
+
+
+</body>
+
+</html>
